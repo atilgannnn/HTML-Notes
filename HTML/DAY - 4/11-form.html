@@ -18,6 +18,54 @@
       <input type="hidden" /><br />
       <!-- Burada front end den alıp back end e göndereceğimiz ama user'ın görmesi gerekmeyen şeyleri göndeririz -->
 
+      <input type="checkbox" name="user" id="usr" checked />
+      <!-- Burada checked attribution'ı halihazırda tik atılmış seçili kutu verir-->
+      <label for="usr">Kullanıcı sözleşmesini okudum</label> <br />
+
+      <input type="checkbox" name="sales" id="sl" />
+      <label for="sl">Satış sözleşmesini okudum</label> <br />
+
+      <!-- Yukarıdaki iki kod blogu içine tik atılan kutucuklar oluşturmasını sağlar. -->
+
+      <input type="radio" name="gender" id="genderM" />
+      <label for="genderM">Erkek</label>
+
+      <input type="radio" name="gender" id="genderF" />
+      <label for="genderF">Kadın</label><br />
+
+      <!-- Yukarıdaki radio örneğinde (adı buymuş buton tipinin) name'ler ortak olmalı ki iki kısım beraber hareket edebilsin yani sadece biri seçilebilsin. Burada bağlandı name'den kuruluyor. -->
+
+      <input type="file" name="avatar" /><br />
+      <!-- Burada siteye dosya yükleyebileceğimiz buton ekliyoruz -->
+      <input type="color" name="renk" /><br />
+      <!-- Burada renk ayarı yapabileceğimiz bir buton koyuyoruz -->
+      <input type="range" name="salary" /><br />
+      <!-- Burada bir sayı değeri aralığı belirleyebileceğimiz bir çubuk ekliyoruz -->
+      <input type="date" name="birthdate" /><br />
+      <!-- Burada da tarih ekleyebileceğimiz bir buton yapıyoruz -->
+      <input type="timr" name="departureTime" /><br />
+      <!-- Burada da saat girilebilen bir buton yarattık -->
+      <input type="datetime-local" name="dt" /><br />
+      <!-- Burada da tarih ve saati birlikte alan bir alan yaratıyoruz  -->
+      <input type="month" name="mn" /><br />
+      <!-- Burada da ay seçimi yapan bir buton yarattık -->
+      <input type="week" name="wk" /><br />
+      <!-- Burada da hafta aralığı şeklinde seçim yapan bir buton oluşturuyoruz -->
+      <select name="city">
+        <option value="34">İstanbul</option>
+        <option value="35">İzmir</option>
+        <option value="06">Ankara</option></select
+      ><br />
+      <!-- Burada da seçeneklerin geldiği bir liste oluşturuyoruz. Yukarıdaki value kısmını kullanmazsak şehir ismi gider, kullanırsak value değeri user a gider ama user göremez-->
+      <select name="country" size="5" multiple>
+        <option value="+90">Türkiye</option>
+        <option value="+49">Germany</option>
+        <option value="+33">France</option></select
+      ><br />
+      <!-- Yukarıdaki ülkelerle de çoktan seçmeli bir liste butonu oluşturduk. "Multiple" attribution'ı buna izin verdi -->
+      <textarea name="" id="" cols="30" rows="10"></textarea>
+      <!-- Yukarıda da user ın yazı yazabileceği bir textbox yarattık. Cols genişliği rows da boyunu ayarlar.-->
+
       <input type="button" value="Custom" />
       <input type="submit" value="Save" />
       <input type="reset" value="Reset" />

@@ -1,0 +1,12 @@
+Meta tagler içinde robots da "no-follow" ve "no-index" gibi iki önemli attribute var. Bunlar sitemizde admin'in herhangi ir biçimde index ve followlanmaması için kullanılabilir.
+Çünkü admin'in index ve follow alabilmesi ciddi güvenlik açığıdır.
+DİKKAT! -> DEFAULT da bunlar follow ve index halde. Yasaklamak için bizim meta içinde nofollow ve noindex diye yazmamız lazım.
+
+
+BACKLINK -> Bir sitenin bir başka siteye ulaşım için link vermesidir. Mesela Trendyol Starbucks a link verdiğinde ve tıklanılan link Starbucks'ın ilgili bir sayfasına gidiyorsa bu backlink dir.
+Backlink sistemi bir sitenin google gibi popüler artama motorlarında listede ilk sıralarda olması için önemli bir kavramdır.(SEO için önemli yani) 
+
+-- > Popüler siteler noreferrer attribüute ünü kapatıp kendisine link vermesini isteyen siteler için ücreti mukabilinde açabiiyor bu özelliği. Norefferer dışa giden linklere konuluyor!
+
+<a> </a> taglerine nofollow dersek link takibi olmaz. noreferrer koyarsak da bu link arama motorları tarafından bir backlink olarak değerlendirilmez
+<a href="..." rel="norefferer noopener"> Açılacak olan sayfada, javascriptin  window.opener komutu ile önceki sayfaya ait bilgi almasını engellemek için konulur.
